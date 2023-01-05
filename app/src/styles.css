@@ -1,0 +1,327 @@
+/*Color Codes
+
+Blue -------------------------- 
+Solid 
+#4D81E7
+
+Shadow
+0 8px 25px -8px #4d81e7;
+
+Red -------------------------- 
+Solid 
+#ea5455
+
+Shadow
+0 8px 25px -8px #ea5455
+
+Greens -------------------------- 
+Solid 
+#28c76f
+
+
+Shadow
+0 8px 25px -8px #28c76f*/
+
+
+/*Breakpoints for responsive design
+
+Larege-------------------------- 
+≥960px 
+
+Larege-------------------------- 
+≥720px 
+
+*/
+
+
+/*Ratio for cover image
+
+16:9-------------------------- 
+The cover image should maintain the aspect ratio of 16:9.
+Do not crop the image manually.
+
+*/
+
+
+/*--------------------------------
+Resets
+--------------------------------*/
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+html,body {
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  direction: ltr;
+  font-size:  14px;
+  color: #1D1D1D;
+  background-color: #EDF2F7;
+  width: 100%;
+  position:absolute;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+}
+
+p, span, button, a, small {
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+}
+
+.button {
+  border: 0 !important;
+  white-space: nowrap !important;
+  -webkit-appearance: none;
+  appearance: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+/*--------------------------------
+Helper Class
+--------------------------------*/
+
+/*divider*/
+hr {
+  margin: 1rem 0;
+  color: #ebe9f1;
+  background-color: currentColor;
+  border: 0;
+  opacity: 1;
+}
+
+/*spacing*/
+.mt-25 {
+  margin-top: 0.25rem !important;
+}
+
+.mt-1 {
+  margin-top: 1rem !important;
+}
+
+.mt-2 {
+  margin-top: 2rem !important;
+}
+
+.mb-25 {
+  margin-bottom: 0.25rem !important;
+}
+
+.mb-1 {
+  margin-bottom: 1rem !important;
+}
+
+.mb-2 {
+  margin-bottom: 2rem !important;
+}
+
+/*--------------------------------
+Typography
+--------------------------------*/
+h1 {
+  font-size: calc(1rem + 0.25vw);
+  font-weight: 500;
+}
+
+small {
+  font-size: 0.857rem;
+  color: #A8BACC;
+  font-weight: 400;
+}
+
+
+/*--------------------------------
+Container
+--------------------------------*/
+
+html .container-fluid {
+  padding: calc(2rem + 6rem + 1.3rem) 2rem 0;
+}
+
+.card {
+  position: relative;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border-radius: 0.428rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 40px 50px -80px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease-in-out, background 0s, color 0s, border-color 0s;
+}
+
+.card-header:first-child {
+  border-radius: 0.428rem 0.428rem 0 0;
+}
+
+.card-header {
+  position: relative;
+  border-bottom: none;
+  padding: 1.5rem;
+  background-color: transparent;
+}
+
+.card .card-header + .card-content > .card-body:first-of-type, .card .card-header + .card-body {
+  padding-top: 0px;
+}
+
+.card-body {
+  padding: 1.5rem 1.5rem;
+}
+
+.card-body p {
+  line-height: 1.4;
+}
+
+.containerRoundBtn{
+  text-align: center;
+}
+
+.containerRoundBtn .card-body p{
+  padding-top:1em;
+  font-weight: 600;
+}
+
+#customization{
+  margin-left: 0.2em;
+}
+
+#customization ul, .custText{
+  margin-left: -1em;
+}
+
+#rightcontainer{
+  margin-left: 1.3em;
+  width: 60%;
+}
+
+#leftcontainer {
+  margin-left: 0;
+  width: 40%;
+}
+
+/*responsive class style changing*/
+.adjustSize{
+  width:100% !important;
+  padding:0 !important;
+  margin:0 0 0 0.5em !important;
+}
+
+.adjustSize2{
+  padding:0 !important;
+  margin:0 0 0 0!important;
+}
+
+.adjustSize3{
+  padding:0 0.5em 0 0.8em!important;
+  margin:0 0 0 0!important;
+}
+
+/*-------------------------------
+List
+--------------------------------*/
+#customization li{
+  border-bottom: 0.1em solid lightgrey;
+  height: 0.99em;
+  padding: 1em 0 4em 0;
+  margin-left: -1.9em;
+}
+#customization li:hover{
+  color: #4D81E7;
+  border-color: #4D81E7;
+}
+
+
+/*--------------------------------
+Buttons
+--------------------------------*/
+
+/*border radius for rounded button*/
+button.round {
+  width: 100%;
+  border-radius: 1.5rem;
+  padding: 0.786rem 1.5rem;
+  font-size: 1rem;
+  background-color: #4D81E7;
+  border: solid #4D81E7;
+}
+
+button.circle {
+  width: 8vw;
+  height: 8vw;
+  min-width: 80px;
+  min-height: 80px;
+  border-radius: 50%;
+}  
+
+#passcode{
+  background-color: #ea5455;
+  border:solid #ea5455;
+  box-shadow: 1px 3px 2px #ea5455;
+}
+
+#camera{
+  background-color: #28c76f;
+  border: solid #28c76f;
+  box-shadow: 1px 3px 2px #28c76f;
+}
+
+.flaticon-unlock, .flaticon-video{
+  font-size: 2em;
+  color: #fff;
+}
+
+/*shadow button when hover*/
+#passcode:hover{
+  box-shadow: 0 8px 25px -8px #ea5455;
+}
+
+#camera:hover{
+  box-shadow: 0 8px 25px -8px #28c76f;
+}
+
+#update:hover{
+  box-shadow: 0 8px 25px -8px #4d81e7;
+  background-color: #4D81E7;
+  border: solid #4D81E7;
+}
+
+/*--------------------------------
+dot animation
+--------------------------------*/
+.dot{
+  height: 0.5em;
+  width: 0.5em;
+  background-color: #28c76f;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 0.2em;
+  animation-name: flashingdot;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes flashingdot {
+  0%{
+    transform: scale(0.8);
+    box-shadow: 0 0 0 0 #28c76f;
+  }
+
+  70%{
+    transform: scale(1);
+    box-shadow: 0 0 0 6px rgba(	40, 199, 111, 0);
+  }
+
+  100%{
+    transform: scale(0.8);
+  }
+}
+
+
+
