@@ -205,6 +205,12 @@ html .container-fluid {
   width: 40%;
 }
 
+/*ratio image border radius*/
+.ratio img{
+  display: inline-block;
+  border-radius: 0.35rem 0.35rem 0 0;
+}
+
 /*responsive class style changing*/
 .adjustSize{
   width:100% !important;
